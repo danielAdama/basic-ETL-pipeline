@@ -40,8 +40,8 @@ def transform(df):
         if col_name in replace_name:
             df = df.rename(columns = replace_name)
 
-    if 'Last_Update' in df:
-        df['Last_Update'] = pd.to_datetime(df['Last_Update'])
+    # if 'Last_Update' in df:
+    #     df['Last_Update'] = pd.to_datetime(df['Last_Update'])
             
     # Return only these set of columns
     keep_cols = [
